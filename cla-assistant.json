@@ -1,0 +1,34 @@
+{
+    "name": {
+        "title": "Full Name",
+        "type": "string",
+        "githubKey": "name"
+    },
+    "email": {
+        "title": "E-Mail",
+        "type": "string",
+        "githubKey": "email",
+        "required": true
+    },
+    "organization": {
+        "title": "Organization",
+        "description": "Organization/Company where you work",
+        "type": "string",
+        "required": false
+    },
+    "agreement": {
+        "title": "I have read and agree to the CLA",
+        "type": "boolean",
+        "required": true
+    },
+    "category": {
+        "title": "How do you sign?",
+        "type": {
+            "enum": [
+                "I am signing on behalf of myself.",
+                "I am signing on behalf of my employer."
+            ]
+        },
+        "required": true
+    }
+}
